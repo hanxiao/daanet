@@ -1,0 +1,32 @@
+common:
+  retry_delay: 300  # seconds, interval between checking available GPU
+  wait_until_next: 60 # seconds, time delay between two jobs
+  entrypoint: train
+
+model_params: &mp
+  train_files:
+      - ['./sample_data/sample.json']
+  dev_files:
+      - ['./sample_data/sample.json']
+  test_files:
+      - ['./sample_data/sample.json']
+  word_embedding_files:
+      - ['./sample_data/sample.embed.txt']
+  char_embedding_files:
+      - ['./sample_data/sample.charembed.txt']
+  result_dir: ['./sample_data/result']
+  out_metric_file: ['./sample_data/sample.out.json']
+
+
+daanet:
+  <<: *mp
+  task_name: ['qag']
+
+
+monoqa:
+  <<: *mp
+  task_name: ['qa']
+
+monoqg:
+  <<: *mp
+  task_name: ['qg']

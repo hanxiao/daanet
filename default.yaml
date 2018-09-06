@@ -1,0 +1,68 @@
+# DO NOT CHANGE THIS FILE!!! This file contains all the default values
+# If you need to run a new experiment, please create a separate YAML file!
+# Example can be found in examples directory
+path:
+  gpu100: &gpu100
+    model_dir: './save/'
+    summary_dir: './summaries/'
+    out_metric_file: './sample_data/sample.out.json'
+
+default: &default
+  optim: ADAM
+  learning_rate: 0.001
+  weight_decay: 0
+  dropout_keep_params: 1.0
+  dropout_keep_word: 1.0
+  batch_size: 32
+  epoch_last: 0
+  epoch_best: -1
+  epoch_early_stop: 2
+  metric_early_stop: f1
+  gradient_clip: true
+  gradient_max_norm: 5.0
+  reset_restored_layers: [none]
+  fixed_layers: [none]
+  ema_decay: 0
+  suffix_output: ''
+  suffix_model_id: ''
+  log_interval: 100
+  save_for_serving: false
+  saver_max_to_keep: 2
+  learning_rate_reset_epoch: 2.0
+  learning_rate_strategy: FIXED
+  enable_tensorboard: true
+  package_dataio: dataio.base
+  package_rccore: jaanet.basic
+  run_mode: 1  # Train
+  lstm_num_layers: 1
+  encode_direction: bidirectional
+  use_answer_masks: true
+  use_oovs: true
+  encode_num_layers: 3
+  encode_num_units: 150
+  dropout_keep_prob: 1.0
+  decoder_num_units: 150
+  use_coverage: True
+  flip_ratio: 0.7
+  cell: bi-gru
+  coverage_loss_weight: 1.0
+  embed_use_pretrained: true
+  epoch_total: 100
+  max_token_len: 16
+  embed_filter_size: 3
+  char_embed_size: 200
+  embedding_output_dim: 300
+  encode_tcn_layers: 3
+  embed_trainable: false
+  highway_layer_num: 2
+  self_attention_encode: true
+  highway_encode: true
+  highway_num_units: 16
+  share_transformer_encode: true
+  share_highway_encode: true
+  final_projection_num: 512
+  self_attention_num_units: 16
+
+default_gpu:
+  <<: *gpu100
+  <<: *default
