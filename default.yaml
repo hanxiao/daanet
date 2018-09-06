@@ -32,7 +32,7 @@ default: &default
   learning_rate_strategy: FIXED
   enable_tensorboard: true
   package_dataio: dataio.base
-  package_rccore: jaanet.basic
+  package_rccore: daanet.basic
   run_mode: 1  # Train
   lstm_num_layers: 1
   encode_direction: bidirectional
