@@ -7,8 +7,6 @@
 - Tensorflow >= 1.6 (self-compiled TF-gpu is recommended!)
 
 ## Usage
-
-## Training
 For dual learning run:
 ```
 python grid_search.py daanet 
