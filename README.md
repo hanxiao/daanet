@@ -9,15 +9,15 @@
 ## Usage
 
 ## Training
-For dual learning of our model on QA(answering) and QG(asking), run:
+For dual learning run:
 ```
 python grid_search.py daanet 
 ```
-For training only on QA(answering), run: 
+For QA-only model (corresponds to `mono` in the experiment) run: 
 ```
 python grid_search.py monoqa 
 ```
-For training only on QG(asking), run :
+For QG-only model (corresponds to `mono` in the experiment) , run :
 ```
 python grid_search.py monoqg 
 ```
