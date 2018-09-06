@@ -1,4 +1,5 @@
-# Dual Ask-Answer Network for Machine Reading Comprehension  
+# DAANet: Dual Ask-Answer Network for Machine Reading Comprehension
+[![Python: 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)](https://opensource.org/licenses/MIT)    [![Tensorflow: 1.6](https://img.shields.io/badge/Tensorflow-1.6-brightgreen.svg)](https://opensource.org/licenses/MIT)  
 
 ## Requirements
 
