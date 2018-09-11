@@ -8,6 +8,7 @@
 
 - Python >= 3.6
 - Tensorflow >= 1.6 (self-compiled TF-gpu is recommended!)
+- gputil >= 1.3.0
 - GPU
 
 ## Usage
