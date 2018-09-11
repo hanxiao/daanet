@@ -2,7 +2,7 @@
 [![Python: 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)](https://opensource.org/licenses/MIT)    [![Tensorflow: 1.6](https://img.shields.io/badge/Tensorflow-1.6-brightgreen.svg)](https://opensource.org/licenses/MIT)  
 
 
-![](.github/74073113.png)
+![](.github/a78d34ce.png)
 
 ## Requirements
 
