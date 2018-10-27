@@ -31,7 +31,7 @@ default: &default
   learning_rate_reset_epoch: 2.0
   learning_rate_strategy: FIXED
   enable_tensorboard: true
-  package_dataio: dataio.base
+  package_dataio: dataio_utils.full_load_io
   package_rccore: daanet.basic
   run_mode: 1  # Train
   lstm_num_layers: 1
